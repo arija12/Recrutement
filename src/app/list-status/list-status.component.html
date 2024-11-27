@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#" >
+      <img src="https://s3.ap-south-1.amazonaws.com/zxyfghdoir-pefrlapqdf/13jp8ejmf4cpm0000000/logo%20Wyplay%202011.jpg" width="150" height="90"  alt="" >
+    </a>
+  </nav>
+  
+  <html>
+   
+  <body style="padding: 2.5rem;">
+    <div class="row" style="margin:0;padding:0;">
+      <div class="col-md">
+        <table class="table">
+            <div class="text-style">Liste des status</div>
+            <thead>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of listStatus">
+                  <th>{{ item.value }}</th>
+                  <td>
+                    <button type="button" class="btn btn-danger"><i class="material-icons">delete</i></button>
+                  </td>
+                </tr>
+              </tbody>
+        </table>
+      </div>
+      <div class="col-md">
+  
+      </div>
+    </div>
+    <h1 style="color:cadetblue;">Ajouter un nouveau status</h1>
+
+    <form [formGroup]="jobForm">
+        <label for="status">Status :</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="status" formControlName="status">
+          <button type="button" class="btn btn-success"  (click)="addStatus()"> Ajouter</button>
+
+        </div>
+
+    </form>
+
+  </body>
+  
+  </html>

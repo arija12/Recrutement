@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="https://s3.ap-south-1.amazonaws.com/zxyfghdoir-pefrlapqdf/13jp8ejmf4cpm0000000/logo%20Wyplay%202011.jpg"
+        width="150" height="90" alt="">
+    </a>
+  </nav>
+  
+  <body>
+  <div class="container">
+    <div class="text-style">Décision </div>
+ 
+  <div >
+    <form>
+        <div class="form-group">
+            <label for="selection">Fonction métier</label>
+            <div class="input-group">
+              <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon" matNativeControl [(ngModel)]="selectedCar" name="status">
+                <option value="" selected></option>
+                <option *ngFor="let item of listStatus">
+                  {{item.value}}
+                </option>
+              </select>
+            </div>
+          </div>
+
+        <div class="form-group" >
+            <label for="nom"> Nom</label>
+            <input type="text" class="form-control" id="nom" placeholder="Ecrire votre nom et prénom">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Compte rendu</label>
+          <textarea type="text" class="form-control rect" id="exampleInputPassword1" placeholder="....."></textarea>
+        </div>
+      
+        <button type="submit" class="btn btn-success float-end"(click)="save()">Envoyer</button>
+
+        
+      </form>
+    </div>
+  </div>
+  </body>
+
+  
+ 

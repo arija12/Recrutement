@@ -1,0 +1,8 @@
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+   
+    cursor: pointer;
+    font-size: 20px;
+  }

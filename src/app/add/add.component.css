@@ -1,0 +1,17 @@
+/* Style buttons */
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+   
+    cursor: pointer;
+    font-size: 20px;
+
+    .custom-margin {
+      margin-bottom: 20px;
+    }
+
+    
+  }
+  
+ 
